@@ -10,7 +10,7 @@ time.sleep(3) #wait for 3 seconds
 mail_id=driver.find_element_by_xpath("//input[@type='email']") #Get to the Email ID text box
 mail_id.send_keys("kiran.cv@qxf2.com") #Enter the id into the textbox
 driver.find_element_by_xpath("//span[text()='Next']").click() # get the location of the Next button and click on it
-time.sleep(3) #wait for 3 minutes
+time.sleep(7) #wait for 3 seconds
 mail_pass=driver.find_element_by_xpath("//input[@type='password']")#Get to the password Text box
 mail_pass.send_keys("kingdom!@#")#Enter the password
 driver.find_element_by_xpath("//span[text()='Next']").click()#Locate the Next Button and click on it
@@ -25,3 +25,4 @@ time.sleep(5)
 driver.find_element_by_xpath("//img[@src='https://www.google.com/a/cpanel/qxf2.com/images/logo.gif?service=google_gsuite']").click()#click on the menu button
 time.sleep(1)
 driver.find_element_by_xpath("//a[text()='Sign out']").click()#click on logout
+driver.close()
